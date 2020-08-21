@@ -1,18 +1,18 @@
 {% set name = "httpx" %}
-{% set version = "0.12.1" %}
+{% set version = "0.14.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 405b4749f597b1f45cae5bffc17b23dc251cce30a0c4c8126f1007b9e728a615
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0c557173821c1e453396325b3fef768d2bca9078f7300d431735177654e0f9b1
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -39,8 +39,8 @@ test:
     - pip check
 
 about:
-  home: "https://github.com/encode/httpx"
+  home: https://github.com/encode/httpx
   license: BSD
   license_family: BSD
   license_file: LICENSE
-  summary: "The next generation HTTP client."
+  summary: The next generation HTTP client.
