@@ -3,11 +3,11 @@ About httpx
 
 Home: https://github.com/encode/httpx
 
-Package license: BSD
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
-Summary: The next generation HTTP client.
+Summary: A next-generation HTTP client for Python.
 
 
 
