@@ -22,7 +22,8 @@ requirements:
   run:
     - python >=3.6
     - certifi
-    - httpcore ==0.11.*
+    - httpcore ==0.12.*
+    - idna ==2.*
     - rfc3986 >=1.3,<2
     - sniffio
 
