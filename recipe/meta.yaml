@@ -1,6 +1,6 @@
 {% set name = "httpx" %}
-{% set version = "0.15.0" %}
-{% set sha256 = "1e94f557f4efaa75bd6677ff6502b778cd0cf10cb53acc7e10ca6c835cf8c9b0" %}
+{% set version = "0.17.1" %}
+{% set sha256 = "cc2a55188e4b25272d2bcd46379d300f632045de4377682aa98a8a6069d55967" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,8 @@ requirements:
   run:
     - python >=3.6
     - certifi
-    - httpcore ==0.11.*
+    - httpcore ==0.12.*
+    - idna ==2.*
     - rfc3986 >=1.3,<2
     - sniffio
 
