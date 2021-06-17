@@ -1,6 +1,6 @@
 {% set name = "httpx" %}
-{% set version = "0.18.1" %}
-{% set sha256 = "0a2651dd2b9d7662c70d12ada5c290abcf57373b9633515fe4baa9f62566086f" %}
+{% set version = "0.18.2" %}
+{% set sha256 = "9f99c15d33642d38bce8405df088c1c4cfd940284b4290cacbfb02e64f4877c6" %}
 
 package:
   name: {{ name|lower }}
